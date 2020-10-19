@@ -12,7 +12,6 @@
     "zustand": "^3.1.3"
   },
   "scripts": {
-    "clean:git": "git clean -fdx",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -40,6 +39,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "husky": "^4.3.0",
     "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
     "typescript": "^4.0.3"
   }
 }
