@@ -24,7 +24,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
-      "pre-push": "yarn lint && types:check"
+      "pre-push": "yarn lint && yarn types:check"
     }
   },
   "devDependencies": {
