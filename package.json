@@ -16,14 +16,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --fix",
-    "lint:check": "eslint .",
     "format": "prettier . --ignore-path .gitignore --write",
+    "lint:check": "eslint .",
+    "types:check": "tsc",
     "format:check": "prettier . --ignore-path .gitignore --check"
   },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
-      "pre-push": "yarn lint"
+      "pre-push": "yarn lint && types:check"
     }
   },
   "devDependencies": {
