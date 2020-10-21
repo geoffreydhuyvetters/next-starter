@@ -18,7 +18,6 @@
       "@/elements/*": ["components/elements/*"],
       "@/patterns/*": ["components/patterns/*"],
       "@/templates/*": ["components/templates/*"],
-
       "@/hooks/*": ["hooks/*"]
     }
   },
