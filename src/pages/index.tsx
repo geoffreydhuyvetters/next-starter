@@ -1,5 +1,15 @@
+import Head from 'next/head';
+import { Title } from '@/elements/Title';
+
 const Home = () => {
-  return <div>Hello world</div>;
+  return (
+    <>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <Title>Home</Title>
+    </>
+  );
 };
 
 export default Home;
