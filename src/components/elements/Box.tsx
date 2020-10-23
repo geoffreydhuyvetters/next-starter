@@ -1,5 +1,3 @@
 import styled from 'styled-components';
 
-const Box = styled.div``;
-
-export { Box };
+export const Box = styled.div``;

@@ -18,7 +18,8 @@
       "@/elements/*": ["components/elements/*"],
       "@/patterns/*": ["components/patterns/*"],
       "@/templates/*": ["components/templates/*"],
-      "@/hooks/*": ["hooks/*"]
+      "@/hooks/*": ["hooks/*"],
+      "@/config/*": ["config/*"]
     }
   },
   "typeRoots": ["@types", "node_modules/@types"],

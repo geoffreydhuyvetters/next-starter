@@ -1,7 +1,10 @@
 import type { AppProps } from 'next/app';
+import Head from 'next/head';
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Reset } from 'styled-reset';
+
+import { theme } from '@/config/theme';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -14,12 +17,20 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const MyApp = ({ Component, pageProps }: AppProps) => (
+const App = ({ Component, pageProps }: AppProps) => (
   <>
+    <Head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+        rel="stylesheet"
+      />
+    </Head>
     <Reset />
     <GlobalStyle />
-    <Component {...pageProps} />
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
   </>
 );
 
-export default MyApp;
+export default App;
